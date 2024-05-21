@@ -4,7 +4,6 @@ audio.style.display = 'none';
 
 // Récupère le bouton de lecture et le texte
 var playButton = document.getElementById('playButton');
-var playText = document.getElementById('playText');
 
 // Gère le clic sur le bouton
 playButton.onclick = function() {
@@ -12,7 +11,6 @@ playButton.onclick = function() {
     if (audio.paused) {
         audio.play();
         this.innerHTML = "Pause";
-        playText.style.display = 'none';
     } else {
         audio.pause();
         this.innerHTML = "Jouer l'audio";
@@ -24,14 +22,11 @@ playButton.onclick = function() {
 audio.onplay = function() {
     playButton.innerHTML = "Pause";
     audio.style.display = 'none';
-    playText.style.color = "white";
 };
 
 // Gère la mise en pause de l'audio
 audio.onpause = function() {
     playButton.innerHTML = "Jouer l'audio";
-    playText.style.display = 'none';
-    playText.style.color = "white";
     audio.style.display = 'none';
 };
 
