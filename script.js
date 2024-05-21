@@ -69,7 +69,7 @@ audio.onpause = function() {
                                     function lance_flamme() {
                                         document.getElementById("bg_img").style.backgroundImage = "url('Images/lance_flamme.png')";
                                         document.getElementById("choix16").style.display = "block";
-                                        document.getElementById("story").innerHTML = "Bien joué! Tu as réussis à controler le lance flamme et tu neutralise les policiers. Mais ou va tu aller maintenant?";
+                                        document.getElementById("story").innerHTML = "Bien joué! Tu as réussis à controler le lance flamme et tu neutralise les policiers. Mais ou vas tu aller maintenant?";
                                         document.getElementById("lance_flamme").style.display = "none";     
                                     }
 
@@ -217,7 +217,7 @@ audio.onpause = function() {
                                                 function fuite_sonic() {
                                                     document.getElementById("story").innerHTML = "Lors de ta course, grâce à un raccourci scénaristique extraordinaire, tu te retrouves miraculeusement juste à côté d'un véhicule abandonné avec les clés sur le contact.";
                                                     document.getElementById("choix14").style.display = "none";
-                                                    document.getElementById("choix15").style.display = "block";
+                                                    document.getElementById("choix7").style.display = "block";
                                                     document.getElementById("bg_img").style.backgroundImage = "url('Images/course_2.png')";
 
                                                 }
