@@ -18,17 +18,6 @@ playButton.onclick = function() {
     }
 };
 
-// Gère le début de la lecture de l'audio
-audio.onplay = function() {
-    playButton.innerHTML = "Pause";
-    audio.style.display = 'none';
-};
-
-// Gère la mise en pause de l'audio
-audio.onpause = function() {
-    playButton.innerHTML = "Jouer l'audio";
-    audio.style.display = 'none';
-};
 
         
     let telechargement = new Boolean(false);
