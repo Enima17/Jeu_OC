@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Aventure</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Un bouton pour jouer l'audio -->
+    <button id="playButton">Jouer l'audio</button>
+    <!-- L'élément audio qui joue automatiquement et en boucle -->
+    <audio id="myAudio" controls autoplay loop>
+        <!-- La source de l'audio est un fichier mp3 -->
+        <source src="musique.mp3">
+    </audio>
+</head>
+
+<body id="bg_img" style="background-image: url('Images/téléchargement.png');">
+    <img src="Images/Boite_De_Dialogue.png" class="bdd">
+    <div class="container">
+        <p id="story">En incarnant Spike, un hacker habile aux cheveux argentés, tu navigues dans les ruelles numériques de Néo-Paris. Ton refuge, un appartement modeste rempli d'écrans, est le théâtre de tes exploits clandestins.</p>
+        <div class="choices" id="choix1">
+            <button onclick="Suivant()">Suivant</button> <!--Bouton qui appelle la fonction Suivant() dans le script.js-->
+        </div>
+                <div class="choices" id="choix2" style="display: none;">
+                    <button onclick="Fuir()">Prendre la clé sans attendre</button> <!--Bouton qui appelle la fonction Fuir() dans le script.js-->
+                    <button onclick="Attendre()">Attendre la fin du téléchargement</button> <!--Bouton qui appelle la fonction Attendre() dans le script.js-->
+                </div>
+                        <div class="choices" id="choix3" style="display: none;">
+                            <button onclick="startQTE()">S'enfuir</button> <!--Bouton qui appelle la fonction startQTE() dans le script_qte.js-->
+                        </div>
+                                <div class="choices" id="failqte" style="display: none;">
+                                    <button onclick="startQTE2()">Utiliser sa botte secrète</button> <!--Bouton qui appelle la fonction startQTE2() dans le script_qte_2.js-->
+                                    <button onclick="Moto()">Prendre ta moto</button>
+                                </div>
+                                        <div class="choices" id="choix16" style="display: none;">
+                                            <button onclick="Base()">Tu te diriges vers ta base secrète</button>
+                                            <button onclick="Station()">Tu te diriges vers un commissariat de police </button>
+                                        </div>
+
+                                        <div class="choices" id="choix19" style="display: none;">
+                                            <button onclick="Station()">Tu te diriges vers un commissariat de police </button>
+                                        </div>
+
+                                                <div class="choices" id="choix17" style="display: none;">
+                                                    <button onclick="décoder_porte()">Tu essaies de décoder le code d'entrée</button>
+                                                    <button onclick="jouer()">Tu trouve une console de jeu et décides d'y jouer</button>
+                                                </div>
+                                                       <div class="choices" id="choix18" style="display: none;">
+                                                            <button onclick="diffusion()">Suivant</button>
+                                                            </div>
+
+
+                                
+                        <div class="choices" id="choix4" style="display: none;">
+                            <button onclick="Moto()">Prendre ta moto</button>
+                            <button onclick="Courir()">Continuer à pieds</button>
+                        </div>
+                        
+                                <div class="choices" id="choix6" style="display: none;">
+                                    <button onclick="Crash()">Suivant</button>
+                                </div>
+                                        <div class="choices" id="choix7" style="display: none;">
+                                            <button onclick="fuite_voiture2()">Suivant</button>
+
+                                        </div>
+                        
+                                                <div class="choices" id="choix8" style="display: none;">
+                                                    <button onclick="cite_voisine()">Tu décides de fuir vers une cité voisine.</button>
+                                                    <button onclick="Base()">Tu te diriges vers ta base secrète</button>
+                                                </div>
+
+                                                <div class="choices" id="choix9" style="display: none;">
+                                                            <button onclick="decode_bar()">Décoder le téléchargement USB</button>
+                                                        </div>
+
+                                                                <div class="choices" id="choix10" style="display: none;">
+                                                                    <button onclick="diffusion()">Suivant</button>
+                                                                        </div>
+
+                                <div class="choices" id="choix5" style="display: none;">
+                                    <button onclick="voiture()">se cacher derrière une voiture</button>
+                                    <button onclick="courir2()">vous continuer de courir</button>
+                                </div>
+
+                                        <div class="choices" id="choix11" style="display: none;">
+                                            <button onclick="Mort()">Suivant</button>
+                                        </div>
+
+                                        <div class="choices" id="choix12" style="display: none;">
+                                            <button onclick="Appel()">Appeler un ami</button>
+                                        </div>
+
+                                                <div class="choices" id="choix13" style="display: none;">
+                                                    <button onclick="Sonic()">Attendre</button>
+                                                </div>
+
+                                                        <div class="choices" id="choix14" style="display: none;">
+                                                            <button onclick="fuite_sonic()">s'enfuir</button>
+                                                        </div>
+
+                                                                <div class="choices" id="choix15" style="display: none;">
+                                                                <button onclick="fuite_voiture()">Prendre la voiture</button>
+                                                                </div>
+
+
+                        
+
+        <p id="result"></p>
+    </div>
+    <p id="result"></p>
+        <img id="dialogueImage" src="Images/Boite_De_Dialogue.png" alt="Dialogue Image" style="display: none;">
+    </div>
+    <script src="script_qte_2.js"></script>
+    <script src="script_qte.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
